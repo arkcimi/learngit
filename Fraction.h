@@ -4,6 +4,8 @@
 #include <iostream>
 
 class Fraction {
+private:
+    static int gcd(int a, int b);
 public:
     int up, down;
 
@@ -12,7 +14,7 @@ public:
     Fraction();
 
     Fraction(int u, int d);
-    
+
     Fraction operator+(const Fraction& a) const;
     Fraction operator-(const Fraction& a) const;
     Fraction operator*(const Fraction& a) const;
@@ -29,9 +31,6 @@ public:
 
     friend std::istream& operator>>(std::istream& input, Fraction& a);
     friend std::ostream& operator<<(std::ostream& output, const Fraction& a);
-
-private:
-    static int gcd(int a, int b);
 };
 
 #endif // FRACTION_H
