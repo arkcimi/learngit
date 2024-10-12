@@ -10,7 +10,9 @@ public:
     void reduce();
 
     Fraction();
+
     Fraction(int u, int d);
+    
     Fraction operator+(const Fraction& a) const;
     Fraction operator-(const Fraction& a) const;
     Fraction operator*(const Fraction& a) const;
