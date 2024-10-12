@@ -8,12 +8,11 @@ private:
     static int gcd(int a, int b);
 public:
     int up, down;
+    
+    Fraction();
+    Fraction(int u, int d);
 
     void reduce();
-
-    Fraction();
-
-    Fraction(int u, int d);
 
     Fraction operator+(const Fraction& a) const;
     Fraction operator-(const Fraction& a) const;
